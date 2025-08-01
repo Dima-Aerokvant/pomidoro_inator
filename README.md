@@ -11,3 +11,5 @@ The goal of the project was to develop a prototype system for the automatic dete
 The system consists of an «Intel RealSense» depth camera capable of measuring the distance to objects, an "Applied Robotics" manipulator with a modified gripper for cutting off spoiled fruits, a YOLO neural network trained on a selected dataset, and a program written in Python.  
 
 The process begins with calibration, during which a transformation matrix is determined to convert the camera's coordinates into the manipulator's world coordinate system. Next, the camera captures an image where the YOLO model detects a spoiled tomato, while the depth camera measures the distance to it. The obtained coordinates are transformed from the camera's system to the world coordinates using the precomputed transformation matrix. The manipulator then receives the precise coordinates of the tomato, moves to its location, and cuts the fruit. Importantly, the system responds only to spoiled tomatoes, ignoring ripe and unripe ones.
+
+![система](img.jpg)
